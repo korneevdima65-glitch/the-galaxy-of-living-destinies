@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b423gex7gdp2t"]
+
+[ext_resource type="Texture2D" uid="uid://dhre33vu30r3t" path="res://icon.svg" id="1_5aqth"]
+[ext_resource type="Script" uid="uid://bi47c8v8uwtnt" path="res://GalaxyLife/Scripts/Station.gd" id="1_l1agj"]
+
+[node name="Station" type="Node2D" unique_id=198153497]
+script = ExtResource("1_l1agj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1436245806]
+rotation = 1.5707964
+texture = ExtResource("1_5aqth")

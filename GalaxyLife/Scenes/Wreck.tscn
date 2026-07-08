@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://3qgicaok5wp2"]
+
+[ext_resource type="Texture2D" uid="uid://dhre33vu30r3t" path="res://icon.svg" id="1_ap3nq"]
+[ext_resource type="Script" uid="uid://tjbrd8d525gp" path="res://GalaxyLife/Scripts/Wreck.gd" id="1_mjtuq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mjtuq"]
+radius = 90.0
+
+[node name="Wreck" type="Area2D" unique_id=803889477]
+script = ExtResource("1_mjtuq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1308107952]
+rotation = 0.7853982
+texture = ExtResource("1_ap3nq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=113910762]
+shape = SubResource("CircleShape2D_mjtuq")
