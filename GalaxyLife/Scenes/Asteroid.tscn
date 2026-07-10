@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://drf55hrvja7a6"]
+
+[ext_resource type="Script" uid="uid://b1a0sugbj0ue1" path="res://GalaxyLife/Scripts/Asteroid.gd" id="1_l51co"]
+
+[node name="Asteroid" type="Node2D" unique_id=1026310239]
+script = ExtResource("1_l51co")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1324906697]

@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://4lpwsg8a1tvg"]
 
-[ext_resource type="PackedScene" uid="uid://bh2x05q4fegg1" path="res://GalaxyLife/Scenes/PlayerShip.tscn" id="1_l6fwq"]
 [ext_resource type="Script" uid="uid://bk8f8x73drcbr" path="res://GalaxyLife/Scripts/World.gd" id="1_mf67f"]
 [ext_resource type="PackedScene" uid="uid://bbltaog4vnbxn" path="res://GalaxyLife/Scenes/NPCShip.tscn" id="2_4rt15"]
 [ext_resource type="PackedScene" uid="uid://b423gex7gdp2t" path="res://GalaxyLife/Scenes/Station.tscn" id="3_mf67f"]
+[ext_resource type="PackedScene" uid="uid://drf55hrvja7a6" path="res://GalaxyLife/Scenes/Asteroid.tscn" id="5_esa3w"]
 
 [node name="World" type="Node2D" unique_id=1395241075]
 script = ExtResource("1_mf67f")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1588119491]
+position = Vector2(642, 360)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1448408429]
 layer = -1
@@ -19,14 +22,11 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.13682577, 0.13682574, 0.13682571, 1)
 
-[node name="PlayerShip" parent="." unique_id=379312142 instance=ExtResource("1_l6fwq")]
-position = Vector2(1080, 150)
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1588119491]
-position = Vector2(642, 360)
+[node name="Asteroid" parent="." unique_id=1026310239 instance=ExtResource("5_esa3w")]
+position = Vector2(1197, 658)
 
 [node name="Station" parent="." unique_id=198153497 instance=ExtResource("3_mf67f")]
-position = Vector2(805, 600)
+position = Vector2(188, 167)
 
 [node name="NPCShip" parent="." unique_id=2141116439 instance=ExtResource("2_4rt15")]
-position = Vector2(196, 479)
+position = Vector2(134, 619)
