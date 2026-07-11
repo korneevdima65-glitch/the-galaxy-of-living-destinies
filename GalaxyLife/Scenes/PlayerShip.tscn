@@ -1,16 +1,20 @@
 [gd_scene format=3 uid="uid://bh2x05q4fegg1"]
 
-[ext_resource type="Script" uid="uid://cse213l7470lx" path="res://GalaxyLife/Scripts/PlayerShip.gd" id="1_i1hgh"]
-[ext_resource type="Texture2D" uid="uid://dhre33vu30r3t" path="res://icon.svg" id="2_3oeyy"]
+[ext_resource type="Script" uid="uid://dxeec30rf0nf8" path="res://GalaxyLife/Scripts/PlayerShip.gd" id="1_lhobg"]
+[ext_resource type="Texture2D" uid="uid://cfxam7ecvfhl" path="res://GalaxyLife/Assets/Sprites/Ships/player_ship.jpg" id="2_42klj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_bhunq"]
-radius = 90.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_riqys"]
+radius = 29.0
+height = 62.0
 
-[node name="PlayerShip" type="CharacterBody2D" unique_id=379312142]
-script = ExtResource("1_i1hgh")
+[node name="PlayerShip" type="CharacterBody2D" unique_id=1363188368]
+script = ExtResource("1_lhobg")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=554481339]
-texture = ExtResource("2_3oeyy")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=844801414]
+rotation = 1.5707964
+texture = ExtResource("2_42klj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=535841041]
-shape = SubResource("CircleShape2D_bhunq")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=111227007]
+shape = SubResource("CapsuleShape2D_riqys")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=732471456]

@@ -1,17 +1,19 @@
 [gd_scene format=3 uid="uid://bbltaog4vnbxn"]
 
-[ext_resource type="Script" uid="uid://bqjp0yuqjooga" path="res://GalaxyLife/Scripts/NPCShip.gd" id="1_1ly6l"]
-[ext_resource type="Texture2D" uid="uid://dhre33vu30r3t" path="res://icon.svg" id="2_hcv17"]
+[ext_resource type="Script" uid="uid://co216eyysqa32" path="res://GalaxyLife/Scripts/NPCShip.gd" id="1_1ly6l"]
+[ext_resource type="Texture2D" uid="uid://c8hthk4gxu6u1" path="res://GalaxyLife/Assets/Sprites/Ships/npc_ship.jpg" id="2_hcv17"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lqvws"]
-radius = 90.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lqvws"]
+radius = 29.0
+height = 62.0
 
-[node name="NPCShip" type="CharacterBody2D" unique_id=2141116439]
+[node name="NPCShip" type="CharacterBody2D" unique_id=2075684718]
 script = ExtResource("1_1ly6l")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1579993578]
-rotation = 3.1415927
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1156105069]
+rotation = 1.5707964
 texture = ExtResource("2_hcv17")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1999703578]
-shape = SubResource("CircleShape2D_lqvws")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1170231747]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_lqvws")

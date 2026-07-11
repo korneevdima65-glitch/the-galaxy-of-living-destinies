@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://drf55hrvja7a6"]
 
 [ext_resource type="Script" uid="uid://b1a0sugbj0ue1" path="res://GalaxyLife/Scripts/Asteroid.gd" id="1_l51co"]
+[ext_resource type="Texture2D" uid="uid://dnwd86mepjip6" path="res://GalaxyLife/Assets/Sprites/Asteroids/asteroid_small.jpg" id="2_q2hfa"]
 
-[node name="Asteroid" type="Node2D" unique_id=1026310239]
+[node name="Asteroid" type="Node2D" unique_id=1736502053]
 script = ExtResource("1_l51co")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1324906697]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1114871123]
+texture = ExtResource("2_q2hfa")
