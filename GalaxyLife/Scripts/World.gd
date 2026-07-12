@@ -95,3 +95,12 @@ func get_nearest_asteroid(target_pos):
 				min_dist = dist
 				nearest = asteroid
 	return nearest
+func get_nearest_station(target_pos):
+	var nearest = null
+	var min_dist = 999999
+	for station in stations:
+		var dist = target_pos.distance_to(station.global_position)
+		if dist < min_dist:
+			min_dist = dist
+			nearest = station
+		return nearest

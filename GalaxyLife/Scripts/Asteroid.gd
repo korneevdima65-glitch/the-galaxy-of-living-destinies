@@ -53,9 +53,9 @@ func mine(value):
 	if amount <= 0:
 		amount = 0
 		depleted = true
-		# Меняем цвет на серый (пустой)
-		sprite.modulate = Color(0.5, 0.5, 0.5)
-		print("💥 Астероид полностью добыт!")
+		# Вместо серого цвета — скрываем спрайт
+		sprite.hide()  # или sprite.visible = false
+		print("💥 Астероид полностью добыт и исчез!")
 	
 	print("⛏️ Добыто: ", mined, " (осталось: ", amount, ")")
 	return mined
